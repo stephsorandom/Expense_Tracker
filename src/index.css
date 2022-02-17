@@ -83,3 +83,10 @@ input {
   width:unset;
   margin: 0 10px;
 }
+
+.expensesBox {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin: 20px;
+}

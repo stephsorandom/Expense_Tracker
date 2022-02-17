@@ -53,6 +53,8 @@ const TransactionView = (props) => {
     )
 }
 
+
+
 const Home = (props) => {
     const [addTransactVisable, toggleAddVisable] = useState(false) //renders on off
     return (
@@ -68,6 +70,7 @@ const Home = (props) => {
             toggleAddVisable={toggleAddVisable}
                 addTransaction={props.addTransaction}
             />)}
+            <div  className='expensesBox'/>
         </div>
     );
 
