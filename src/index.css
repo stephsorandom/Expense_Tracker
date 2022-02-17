@@ -18,6 +18,7 @@ code {
   align-items: center;
   margin: 30px 0 10px;
   font-family: Montserrat;
+  /* width: 360px; */
 }
 
 #heading {
@@ -47,9 +48,11 @@ code {
   color: white;
   padding: 5px 10px;
   border-radius: 4px;
+  text-align: center;
   cursor: pointer;
   font-weight: bold;
   font-size: 15px;
+  /* width: 100%; */
 }
 
 .addView {
@@ -57,14 +60,16 @@ code {
   flex-direction: column;
   border: 1px solid #e6e8e9;
   gap: 10px;
-  margin: 10px 20px;
+  margin:  20px;
+  padding: 15px 20px;
 }
 
 input {
   outline: none;
-  padding: 10px 20px;
+  padding: 10px 12px;
   border-radius: 4px;
   border: 1px solid #e6e8e9;
+  /* width: 100%; */
 }
 
 .radioBtn {
