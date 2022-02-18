@@ -70,7 +70,14 @@ const Home = (props) => {
             toggleAddVisable={toggleAddVisable}
                 addTransaction={props.addTransaction}
             />)}
-            <div  className='expensesBox'/>
+            <div className='expensesBox'>
+                <div isIncome={false} className='expenseDiv'>
+                    Expense<span id='expensediv'>$1000</span>
+                </div>
+                <div isIncome={true} className='incomeDiv'>
+                    Income<span id='incomediv'>$5000</span>
+                </div>
+            </div>
         </div>
     );
 
