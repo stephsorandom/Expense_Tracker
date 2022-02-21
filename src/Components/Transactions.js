@@ -16,7 +16,7 @@ const TransactionArea = (props) => {
 };
 
 function Transactions(props) {
-    const [cellColor, updateCellColor] = useState(props.payload?.type)
+    // const [cellColor, updateCellColor] = useState(props.payload?.type)
     const [searchTxt, updateSearchTxt] = useState('')
     const [filterTransaction, updateTxn] = useState(props.transaction)
 
