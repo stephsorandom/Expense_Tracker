@@ -60,7 +60,7 @@ const Home = (props) => {
     return (
         <div className='balanceContainer'>
             <div className='balanceBox'>
-                <span>Balance: $10000</span>
+                <span>Balance: ${props.income - props.expense}</span>
                 <button className='addTransaction' onClick={() => toggleAddVisable(!addTransactVisable)}> 
                     {addTransactVisable ? 'CANCEL' : 'ADD'}
                 </button>
@@ -72,10 +72,10 @@ const Home = (props) => {
             />)}
             <div className='expensesBox'>
                 <div isIncome={false} className='expenseDiv'>
-                    Expense<span id='expensediv'>$1000</span>
+                    Expense<span id='expensediv'>${props.expense}</span>
                 </div>
                 <div isIncome={true} className='incomeDiv'>
-                    Income<span id='incomediv'>$5000</span>
+                    Income<span id='incomediv'>${props.income}</span>
                 </div>
             </div>
         </div>
